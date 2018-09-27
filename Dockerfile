@@ -1,5 +1,4 @@
 FROM ubuntu:18.04
-TAG phoenixazrael/xampp
 RUN apt-get update 
 RUN apt-get -y install curl net-tools
 #RUN XAMP_VERSION='7.2.10'
