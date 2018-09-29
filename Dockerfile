@@ -1,9 +1,9 @@
 FROM ubuntu:18.04
 RUN apt-get update 
 RUN apt-get -y install curl net-tools
-#RUN XAMP_VERSION='7.2.10'
+#RUN XAMP_VERSION='7.2.9'
 #RUN XAMP_DL_LINK='https://www.apachefriends.org/xampp-files/$XAMP_VERSION/xampp-linux-x64-$XAMP_VERSION-0-installer.run'
-RUN curl -L -o xampp-linux-installer.run "https://www.apachefriends.org/xampp-files/7.2.10/xampp-linux-x64-7.2.10-0-installer.run"
+RUN curl -L -o xampp-linux-installer.run "https://www.apachefriends.org/xampp-files/7.2.9/xampp-linux-x64-7.2.9-0-installer.run"
 #$XAMP_DL_LINK
 RUN chmod +x xampp-linux-installer.run
 #RUN XAMP_PARAMS='--mode text'
