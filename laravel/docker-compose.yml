@@ -26,16 +26,16 @@ services:
         networks: 
             - laravel
 
-    artisan:
-        build:
-            context: .
-            dockerfile: Dockerfile
-        container_name: artisan
-        volumes:
-            - ../../HackCal/src/:/www/
-        depends_on: 
-            - lampp-server
-        working_dir: /www/
-        entrypoint: ['/www/artisan']
-        networks: 
-            - laravel
+    # artisan:
+    #     build:
+    #         context: .
+    #         dockerfile: Dockerfile
+    #     container_name: artisan
+    #     volumes:
+    #         - ../../HackCal/src/:/www/
+    #     depends_on: 
+    #         - lampp-server
+    #     working_dir: /www/
+    #     entrypoint: ['/www/artisan']
+    #     networks: 
+    #         - laravel
